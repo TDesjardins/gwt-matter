@@ -15,10 +15,9 @@
  *******************************************************************************/
 package com.github.tdesjardins.matter.render;
 
-import com.google.gwt.core.client.JavaScriptObject;
-
 import com.github.tdesjardins.matter.Engine;
 
+import elemental2.dom.Element;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
@@ -34,7 +33,7 @@ public interface RenderOptions {
     public void setEngine(Engine engine);
 
     @JsProperty
-    public void setElement(JavaScriptObject javaScriptObject);
+    public void setElement(Element javaScriptObject);
 
     @JsProperty
     public void setOptions(RenderOptionsOptions renderOptionsOptions);

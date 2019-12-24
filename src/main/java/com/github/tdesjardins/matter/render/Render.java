@@ -17,9 +17,9 @@ package com.github.tdesjardins.matter.render;
 
 import com.github.tdesjardins.matter.JsConstants;
 import com.github.tdesjardins.matter.geometry.Bounds;
-import com.google.gwt.canvas.dom.client.Context2d;
-import com.google.gwt.dom.client.CanvasElement;
 
+import elemental2.dom.CanvasRenderingContext2D;
+import elemental2.dom.HTMLCanvasElement;
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
@@ -40,10 +40,10 @@ public class Render {
     public native Bounds getBounds();
 
     @JsProperty
-    public native CanvasElement getCanvas();
+    public native HTMLCanvasElement getCanvas();
 
     @JsProperty
-    public native Context2d getContext();
+    public native CanvasRenderingContext2D getContext();
 
     @JsProperty
     public native RenderOptionsOptions getOptions();

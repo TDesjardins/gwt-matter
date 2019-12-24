@@ -17,8 +17,8 @@ package com.github.tdesjardins.matter.input;
 
 import com.github.tdesjardins.matter.JsConstants;
 import com.github.tdesjardins.matter.geometry.Vector;
-import com.google.gwt.core.client.JavaScriptObject;
 
+import elemental2.dom.Element;
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsOverlay;
 import jsinterop.annotations.JsType;
@@ -27,7 +27,7 @@ import jsinterop.annotations.JsType;
 public class Mouse {
 
     @JsMethod(namespace = JsConstants.NAMESPACE_MOUSE)
-    public static native Mouse create(JavaScriptObject element);
+    public static native Mouse create(Element element);
 
     @JsMethod(namespace = JsConstants.NAMESPACE_MOUSE)
     public static native void setOffset(Mouse mouse, Vector offset);
