@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/TDesjardins/gwt-matter.svg?branch=master)](https://travis-ci.org/TDesjardins/gwt-matter)
 
-GWT-wrapper for physics engine matter.js
+GWT-wrapper for physics engine [matter.js](https://github.com/liabru/matter-js).
