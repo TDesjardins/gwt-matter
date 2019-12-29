@@ -15,6 +15,8 @@
  *******************************************************************************/
 package com.github.tdesjardins.matter;
 
+import elemental2.core.JsObject;
+
 public class MatterFactory {
 
     /**
@@ -22,12 +24,9 @@ public class MatterFactory {
      *
      * @return options instance
      */
-    public static native <T extends Options> T createOptions() /*-{
-        return {};
-    }-*/;
-
-    public static native void init(Engine quintus) /*-{
-        $wnd.Q = quintus;
-    }-*/;
+    @SuppressWarnings("unchecked")
+    public static <T extends Options> T createOptions() {
+        return (T)new JsObject();
+    };
 
 }
